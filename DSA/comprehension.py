@@ -19,6 +19,7 @@ def first_n_squares(n):
     return l, s, d
 
 # generator comprehension
+# -----------------------
 # This syntax is particularly attractive when results do not need
 # to be stored in memory. For example, to compute the sum of the
 # first n squares, the generator syntax is preferred to the use of
