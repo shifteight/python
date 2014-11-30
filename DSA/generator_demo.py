@@ -25,9 +25,7 @@ def fibonacci():
     b = 1
     while True:
         yield a
-        future = a + b
-        a = b
-        b = future
+        a, b = b, a + b
 
 
 def print_first_n_fibs(n):
