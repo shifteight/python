@@ -127,10 +127,24 @@ def is_distinct(numbers):
 # [chr(k) for k in range(97,123)]
 
 # C-1.20
-# TODO!
+# The modern version of the Fisher-Yates shuffle
+# http://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle#The_modern_algorithm
+def mfy_shuffle(numbers):
+    from random import randint
+    n = len(numbers)
+    for i in range(n):
+        j = randint(i, n - 1)
+        numbers[i], numbers[j] = numbers[j], numbers[i]
+    
 
 # C-1.21
-# TODO!
+def read_and_print_reverse():
+    import sys
+    data = sys.stdin.readlines()
+    n = len(data)
+    for i in range(1, n + 1):
+        print(data[-i].strip())
+        
 
 # C-1.22
 # dot product of two arrays of length n
@@ -146,3 +160,73 @@ def dot_product(a, b):
     for i in range(n):
         c.append(a[i] * b[i])
     return c
+
+# C-1.24
+def count_vowels(s):
+    """
+    count number of vowels in string
+    """
+    d = {'a': 0, 'e': 0, 'i': 0, 'o': 0, 'u': 0}
+    for c in s:
+        if c in d:
+            d[c] += 1
+    return sum(d.values())
+
+
+# C-1.25
+def remove_punctuations(s):
+    import string
+    result = ""
+    for c in s:
+        if c not in string.punctuation:
+            result += c
+    return result
+
+# C-1.26
+# TODO!
+
+# C-1.27
+# TODO!
+
+# C-1.28
+def norm(v, p=2):
+    """
+    return the p-norm of vector v.
+    """
+    import math
+    return (sum(math.pow(k, p) for k in v)) ** (1 / p)
+
+# P-1.29
+# import itertools
+# [''.join(x) for x in itertools.permutations('catdog')]
+
+
+# P-1.30
+def divide_by_2(n):
+    """
+    return the number of times one must repeatedly divide n (larger than 2)
+    by 2 before getting a value less than 2.
+    """
+    count = 0
+    while n >= 2:
+        n //= 2
+        count += 1
+    return count
+
+# P-1.31
+# TODO: make change
+
+# P-1.32
+# TODO: simple calculator
+
+# P-1.33
+# TODO: handhold calculator
+
+# P-1.34
+# TODO: random typos
+
+# P-1.35
+# birthday paradox: as a standalone program
+
+# P-1.36
+# word frequency: as a standalone program
