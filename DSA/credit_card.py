@@ -1,7 +1,7 @@
 class CreditCard:
     """A consumer credit card."""
 
-    def __init__(self, customer, bank, acnt, limit):
+    def __init__(self, customer, bank, acnt, limit, balance=0):
         """Create a new credit card instance.
 
         The initial balance is zero.
@@ -15,7 +15,7 @@ class CreditCard:
         self._bank = bank
         self._account = acnt
         self._limit = limit
-        self._balance = 0
+        self._balance = balance
 
     def get_customer(self):
         """Return name of the customer."""
@@ -42,6 +42,10 @@ class CreditCard:
 
         Return True if charge was processed; False if charge was denied.
         """
+        # ensure that the caller sends a number as a parameter
+        if not isinstance(price, (int, float)):
+            raise TypeError('price must be numeric')
+
         if price + self._balance > self._limit:
             return False
         else:
@@ -50,7 +54,15 @@ class CreditCard:
 
     def make_payment(self, amount):
         """Process customer payment that reduces balance."""
+
+        if not isinstance(amount, (int, float)):
+            raise TypeError('payment amount must be numeric')
+
+        if amount < 0:
+            raise ValueError('payment amount must be positive')
+
         self._balance -= amount
+
 
 class PredatoryCreditCard(CreditCard):
     """An extension to CreditCard that compounds interest and fees."""
@@ -77,29 +89,28 @@ class PredatoryCreditCard(CreditCard):
         """
         success = super().charge(price)
         if not success:
-            self._balance += 5    # assess penalty
+            self._balance += 5  # assess penalty
         return success
 
     def process_month(self):
         """Assess monthly interest on outstanding balance."""
         if self._balance > 0:
-            monthly_factor = pow(1 + self._apr, 1/12)
+            monthly_factor = pow(1 + self._apr, 1 / 12)
             self._balance *= monthly_factor
 
 # testing CreditCard class
 if __name__ == '__main__':
-    wallet = []
-    wallet.append(CreditCard('John Bowman', 'California Savings',
-                             '5391 0375 9387 5309', 2500))
-    wallet.append(CreditCard('John Bowman', 'California Federal',
-                             '3485 0399 3395 1954', 3500))
-    wallet.append(CreditCard('John Bowman', 'California Finance',
-                             '5391 0375 9387 5309', 5000))
+    wallet = [CreditCard('John Bowman', 'California Savings',
+                         '5391 0375 9387 5309', 2500),
+              CreditCard('John Bowman', 'California Federal',
+                         '3485 0399 3395 1954', 3500),
+              CreditCard('John Bowman', 'California Finance',
+                         '5391 0375 9387 5309', 5000)]
 
     for val in range(1, 17):
         wallet[0].charge(val)
         wallet[1].charge(2 * val)
-        wallet[2].charge(3 * val)
+        wallet[2].charge(40 * val)
 
     for c in range(3):
         print('Customer = ', wallet[c].get_customer())
