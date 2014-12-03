@@ -1,3 +1,6 @@
+import math
+
+
 class Progression:
     """Iterator producing a generic progression.
 
@@ -83,6 +86,35 @@ class FibonacciProgression(Progression):
     def _advance(self):
         self._prev, self._current = self._current, self._prev + self._current
 
+
+class PairDiffProgression(Progression):
+    """Iterator producing a progression in which each value is the
+    absolute value of the difference between the previous two values.
+
+    Constraint: the first two value must be positive!
+    """
+
+    def __init__(self, first=2, second=200):
+        if first < 0 or second < 0:
+            raise ValueError('first two values must be positive')
+        super().__init__(first)
+        self._prev = second + first
+
+    def _advance(self):
+        tmp = self._prev
+        self._prev = self._current
+        self._current = abs(tmp - self._current)
+
+
+class ConsecutiveSqrtProgression(Progression):
+    """Iterator producing a consecutive sqrt progression."""
+
+    def __init__(self, start=65536):
+        super().__init__(start)
+
+    def _advance(self):
+        self._current = math.sqrt(self._current)
+
 # testing for progressions
 if __name__ == '__main__':
     print('Default progression:')
@@ -105,4 +137,17 @@ if __name__ == '__main__':
 
     print('Fibonacci progression with start values 4 and 6:')
     FibonacciProgression(4, 6).print_progression(10)
+
+    print('PairDiff progression with default start values:')
+    PairDiffProgression().print_progression(10)
+
+    print('PairDiff progression with start values 3 and 5:')
+    PairDiffProgression(3, 5).print_progression(10)
+
+    print('Consecutive progression with default start values:')
+    ConsecutiveSqrtProgression().print_progression(10)
+
+    print('Consecutive progression with start value 10000:')
+    ConsecutiveSqrtProgression(10000).print_progression(10)
+
 
