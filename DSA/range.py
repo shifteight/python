@@ -36,14 +36,14 @@ class Range(object):
 
         return self._start + k * self._step
 
+    def __contains__(self, k):
+        """A more efficient implementation of lookup than default support."""
+        return self._start <= k < (self._start + self._length * self._step) \
+            and k % (self._step - self._start) == 0
+
 
 if __name__ == '__main__':
-    v = Vector(5)
-    v[1] = 23
-    v[-1] = 45
-    print(v[4])
-    u = v + v
-    print(u)
-    total = 0
-    for entry in v:
-        total += entry
+
+    r = Range(0, 2000000000, 100)
+    print(100000001 in r)
+    print(100000001 in r)

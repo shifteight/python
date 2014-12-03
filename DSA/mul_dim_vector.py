@@ -53,7 +53,15 @@ class Vector(object):
         return result
 
     def __mul__(self, other):
-        """Return the dot product of two vectors."""
+        """Return the dot product of two vectors or scalar multiplication
+           of a vector.
+
+           If other is a number, use scalar multiplication;
+           If other is a vector, use dot product.
+        """
+        if isinstance(other, (int, float)):
+            return self._scalar_mul(other)
+        
         if len(self) != len(other):
             raise ValueError('dimensions must agree')
         result = 0
@@ -61,15 +69,15 @@ class Vector(object):
             result += self[j] * other[j]
         return result
 
-    # def __mul__(self, times):
-    #     """Return a multiple of a vector. Support for syntax like `v * 3`."""
-    #     if not isinstance(times, (int, float)):
-    #         raise TypeError('multiple must be numeric')
-    #     result = Vector(len(self))
-    #     for j in range(len(self)):
-    #         result[j] = self[j] * times
-    #     return result
-    #
+    def _scalar_mul(self, times):
+        """Return a multiple of a vector. Support for syntax like `v * 3`."""
+        if not isinstance(times, (int, float)):
+            raise TypeError('multiple must be numeric')
+        result = Vector(len(self))
+        for j in range(len(self)):
+            result[j] = self[j] * times
+        return result
+    
     # def __rmul__(self, times):
     #     """Provide support for syntax like `3 * v`."""
     #     if not isinstance(times, (int, float)):
@@ -107,3 +115,7 @@ if __name__ == '__main__':
 
     v1 = Vector([1, 2, 3])
     print(v1)
+
+    v2 = Vector([2, 3, 4])
+    print("v2 = ", v2)
+    print("v2 * 3 = ", v2 * 3)

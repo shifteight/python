@@ -1,6 +1,7 @@
 class CreditCard:
     """A consumer credit card."""
 
+
     def __init__(self, customer, bank, acnt, limit, balance=0):
         """Create a new credit card instance.
 
@@ -67,6 +68,9 @@ class CreditCard:
 class PredatoryCreditCard(CreditCard):
     """An extension to CreditCard that compounds interest and fees."""
 
+
+    NUMBER_OF_CHARGES = 0
+    
     def __init__(self, customer, bank, acnt, limit, apr):
         """Create a new predatory credit card instance.
 
@@ -88,37 +92,56 @@ class PredatoryCreditCard(CreditCard):
         Return False and assess $5 fee if charge was denied.
         """
         success = super().charge(price)
-        if not success:
+        if success:
+            PredatoryCreditCard.NUMBER_OF_CHARGES += 1
+            return True
+        else:
             self._balance += 5  # assess penalty
-        return success
+            return False
 
     def process_month(self):
         """Assess monthly interest on outstanding balance."""
+
+        if PredatoryCreditCard.NUMBER_OF_CHARGES > 10:
+            self._balance += 1 * (PredatoryCreditCard.NUMBER_OF_CHARGES - 10)
+            
         if self._balance > 0:
             monthly_factor = pow(1 + self._apr, 1 / 12)
             self._balance *= monthly_factor
+        
 
 # testing CreditCard class
 if __name__ == '__main__':
-    wallet = [CreditCard('John Bowman', 'California Savings',
-                         '5391 0375 9387 5309', 2500),
-              CreditCard('John Bowman', 'California Federal',
-                         '3485 0399 3395 1954', 3500),
-              CreditCard('John Bowman', 'California Finance',
-                         '5391 0375 9387 5309', 5000)]
+##    wallet = [CreditCard('John Bowman', 'California Savings',
+##                         '5391 0375 9387 5309', 2500),
+##              CreditCard('John Bowman', 'California Federal',
+##                         '3485 0399 3395 1954', 3500),
+##              CreditCard('John Bowman', 'California Finance',
+##                         '5391 0375 9387 5309', 5000)]
+##
+##    for val in range(1, 17):
+##        wallet[0].charge(val)
+##        wallet[1].charge(2 * val)
+##        wallet[2].charge(40 * val)
+##
+##    for c in range(3):
+##        print('Customer = ', wallet[c].get_customer())
+##        print('Bank = ', wallet[c].get_bank())
+##        print('Account = ', wallet[c].get_account())
+##        print('Limit = ', wallet[c].get_limit())
+##        print('Balance = ', wallet[c].get_balance())
+##        while wallet[c].get_balance() > 100:
+##            wallet[c].make_payment(100)
+##            print('New balance = ', wallet[c].get_balance())
+##        print()
 
-    for val in range(1, 17):
-        wallet[0].charge(val)
-        wallet[1].charge(2 * val)
-        wallet[2].charge(40 * val)
-
-    for c in range(3):
-        print('Customer = ', wallet[c].get_customer())
-        print('Bank = ', wallet[c].get_bank())
-        print('Account = ', wallet[c].get_account())
-        print('Limit = ', wallet[c].get_limit())
-        print('Balance = ', wallet[c].get_balance())
-        while wallet[c].get_balance() > 100:
-            wallet[c].make_payment(100)
-            print('New balance = ', wallet[c].get_balance())
-        print()
+    pc = PredatoryCreditCard('John Bowman', 'California Savings',
+                    '5391 0375 9387 5309', 2000, 0.05)
+    print("Balance: ", pc.get_balance())
+    print("Make 11 charges ...")
+    for i in range(11):
+        pc.charge(10)
+    print("Balance: ", pc.get_balance())
+    print("Monthly processing ...")
+    pc.process_month()
+    print("After processed: ", pc.get_balance())

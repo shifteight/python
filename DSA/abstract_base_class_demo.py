@@ -18,6 +18,16 @@ class Sequence(metaclass = ABCMeta):
                 return True
         return False
 
+    def __eq__(self, other):
+        """Return True if the two sequences are element by element equivalent."""
+        if len(self) != len(other):
+            return False
+        else:
+            for j in range(len(self)):
+                if self[j] != other[j]:
+                    return False
+        return True
+    
     def index(self, val):
         """Return leftmost index at which val is found (or raise ValueError)."""
         for j in range(len(self)):
