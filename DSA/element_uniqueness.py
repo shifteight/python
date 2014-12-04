@@ -19,6 +19,6 @@ def unique2(S):
     """
     temp = sorted(S)
     for j in range(1, len(temp)):
-        if S[j-1] == S[j]:
+        if temp[j-1] == temp[j]:
             return False
     return True
