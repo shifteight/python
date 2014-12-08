@@ -116,7 +116,11 @@ def rearrange_integers(seq):
     so that all evens appear before odds."""
     if len(seq) <= 1:
         return seq
-    if seq[len(seq)-1] % 2 == 0:
-        return [seq[len(seq)-1]] + rearrange_integers(seq[0:-1])
+    last = seq[len(seq)-1]
+    if last % 2 != 0:
+        return rearrange_integers(seq[:-1]).append(last)
     else:
-        return rearrange_integers(seq[0:-1]).append(seq[len(seq)-1])
+        return [last] + rearrange_integers(seq[:-1])
+
+a = [1]
+rearrange_integers(a)
