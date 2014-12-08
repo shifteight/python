@@ -91,5 +91,32 @@ def subsets(seq):
         res.append(sub + [seq[-1]])
     return res
 
-a = [1, 2, 3]
-print(subsets(a))
+
+def reverse_recursive(s):
+    """Return the reverse of string s."""
+    if len(s) <= 1:
+        return s
+    else:
+        return reverse_recursive(s[1:len(s)]) + s[0]
+
+
+def is_palindrome(s):
+    """Test if s is a palindrome."""
+    if len(s) <= 1:
+        return True
+    
+    if s[0] == s[len(s)-1]:
+        return is_palindrome(s[1:-1])
+    else:
+        return False
+
+
+def rearrange_integers(seq):
+    """Return a rearrangement of a sequence of integers,
+    so that all evens appear before odds."""
+    if len(seq) <= 1:
+        return seq
+    if seq[len(seq)-1] % 2 == 0:
+        return [seq[len(seq)-1]] + rearrange_integers(seq[0:-1])
+    else:
+        return rearrange_integers(seq[0:-1]).append(seq[len(seq)-1])
