@@ -110,17 +110,3 @@ def is_palindrome(s):
     else:
         return False
 
-
-def rearrange_integers(seq):
-    """Return a rearrangement of a sequence of integers,
-    so that all evens appear before odds."""
-    if len(seq) <= 1:
-        return seq
-    last = seq[len(seq)-1]
-    if last % 2 != 0:
-        return rearrange_integers(seq[:-1]).append(last)
-    else:
-        return [last] + rearrange_integers(seq[:-1])
-
-a = [1]
-rearrange_integers(a)
