@@ -110,3 +110,29 @@ def is_palindrome(s):
     else:
         return False
 
+
+def find(path, filename):
+    """Return all entries rooted in path having the given name."""
+    import os
+    entries = []
+    for f in os.listdir(path):
+        childpath = os.path.join(path, f)
+        if f == filename:
+            entries.append(childpath)
+        if os.path.isdir(childpath):
+            entries.extend(find(childpath, filename))
+    return entries
+
+
+
+# TODO! P-4.24
+def puzzle_solve(k, S, U):
+    """Solve a combinatorial puzzle by enumerating and testing all possible
+    configurations.
+    Input: An interger k, sequence S, and set U
+    Output: An enumeration of all k-length extensions to S using elements in
+            U without repetitions.
+    """
+
+
+
