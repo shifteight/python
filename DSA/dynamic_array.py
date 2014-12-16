@@ -17,7 +17,7 @@ class DynamicArray:
 
     def __getitem__(self, k):
         """Return element at index k."""
-        if not 0 <= k < self._n:
+        if not -self._n <= k < self._n:
             raise IndexError('invalid index')
         return self._A[k]
 

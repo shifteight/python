@@ -76,3 +76,23 @@ def is_matched(expr):
             if righty.index(c) != lefty.index(S.pop()):
                 return False
     return S.is_empty()
+
+
+def transfer(S, T):  # R-6.3
+    """Transfer all elements from S to T, so that the element
+    that starts at the top of S is the first to be inserted onto T,
+    and the element at the bottom of S ends up at the top of T.
+    """
+    for j in range(len(S)):
+        T.push(S.pop())
+
+
+def remove_all(S):  # R-6.4
+    """Remove all elements of S recursively."""
+    if len(S) == 0:
+        raise Empty('Stack is already empty!')
+    if len(S) == 1:
+        S.pop()
+    else:
+        S.pop()
+        remove_all(S)
