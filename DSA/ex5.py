@@ -3,7 +3,7 @@ __author__ = 'kevin'
 
 def test_list_size(n):
     import sys
-    data = []
+    data = list(range(6))
     for k in range(n):
         a = len(data)
         b = sys.getsizeof(data)
@@ -22,3 +22,31 @@ def find_repeat(ints):
         res ^= i
 
     return res
+
+
+def summation(data):
+    """Calculate the sum of elements in an n*n data array.
+    For comparison to comprehension syntax method with built-in sum function.
+    """
+    s = 0
+    for row in range(len(data)):
+        for col in range(len(data[row])):
+            s += data[row][col]
+    return s
+
+# testing:
+# In ipython:
+# data = [[1,2,3], [2,3,4], [3,4,5]]
+# %timeit(summation(data))
+# %timeit(sum(sum(row) for row in data))
+
+
+def shuffle1(numbers):
+    """An implementation of shuffle function alike that in random module.
+    Using method like C-1.20, but with randrange().
+    """
+    from random import randrange
+    n = len(numbers)
+    for i in range(n-1, 1, -1):
+        j = randrange(i-1)
+        numbers[i], numbers[j] = numbers[j], numbers[i]
