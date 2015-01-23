@@ -1,9 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9cfe506e-6d12-4ea6-ba3c-dc5682650001" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hellopython/difference_engine_1_os.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hellopython/difference_engine_2_os.py" />
+    <list default="true" id="9cfe506e-6d12-4ea6-ba3c-dc5682650001" name="Default" comment="difference engine">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hellopython/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hellopython/difference_engine/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hellopython/hunt_wumpus/__init__.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hellopython/gen_hash_file.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hellopython/hello1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hellopython/hello2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hellopython/loop_demo.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hellopython/os_walk_demo.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hellopython/test_todo.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hellopython/todo.py" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/hellopython/difference_engine_1_os.py" afterPath="$PROJECT_DIR$/hellopython/difference_engine/difference_engine_1_os.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/hellopython/difference_engine_2_os.py" afterPath="$PROJECT_DIR$/hellopython/difference_engine/difference_engine_2_os.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/hellopython/difference_engine_3_os.py" afterPath="$PROJECT_DIR$/hellopython/difference_engine/difference_engine_3_os.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/hellopython/difference_engine_4_os.py" afterPath="$PROJECT_DIR$/hellopython/difference_engine/difference_engine_4_os.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/hellopython/test/image1.gif" afterPath="$PROJECT_DIR$/hellopython/difference_engine/test/image1.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/hellopython/test/image2.gif" afterPath="$PROJECT_DIR$/hellopython/difference_engine/test/image2.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/hellopython/test/image3.gif" afterPath="$PROJECT_DIR$/hellopython/difference_engine/test/image3.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/hellopython/test/test 2/test1.txt" afterPath="$PROJECT_DIR$/hellopython/difference_engine/test/test 2/test1.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/hellopython/test/test 2/test2.txt" afterPath="$PROJECT_DIR$/hellopython/difference_engine/test/test 2/test2.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/hellopython/test/test 2/test3.txt" afterPath="$PROJECT_DIR$/hellopython/difference_engine/test/test 2/test3.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/hellopython/test/test1.txt" afterPath="$PROJECT_DIR$/hellopython/difference_engine/test/test1.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/hellopython/test/test2.txt" afterPath="$PROJECT_DIR$/hellopython/difference_engine/test/test2.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/hellopython/test/test3.txt" afterPath="$PROJECT_DIR$/hellopython/difference_engine/test/test3.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/hellopython/test2/image2.gif" afterPath="$PROJECT_DIR$/hellopython/difference_engine/test2/image2.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/hellopython/test2/image3.gif" afterPath="$PROJECT_DIR$/hellopython/difference_engine/test2/image3.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/hellopython/test2/image4.gif" afterPath="$PROJECT_DIR$/hellopython/difference_engine/test2/image4.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/hellopython/test2/test 2/test2.txt" afterPath="$PROJECT_DIR$/hellopython/difference_engine/test2/test 2/test2.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/hellopython/test2/test 2/test3.txt" afterPath="$PROJECT_DIR$/hellopython/difference_engine/test2/test 2/test3.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/hellopython/test2/test 2/test4.txt" afterPath="$PROJECT_DIR$/hellopython/difference_engine/test2/test 2/test4.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/hellopython/test2/test2.txt" afterPath="$PROJECT_DIR$/hellopython/difference_engine/test2/test2.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/hellopython/test2/test3.txt" afterPath="$PROJECT_DIR$/hellopython/difference_engine/test2/test3.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/hellopython/test2/test4.txt" afterPath="$PROJECT_DIR$/hellopython/difference_engine/test2/test4.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/hellopython/wumpus-1.py" afterPath="$PROJECT_DIR$/hellopython/hunt_wumpus/wumpus-1.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/hellopython/wumpus-2.py" afterPath="$PROJECT_DIR$/hellopython/hunt_wumpus/wumpus-2.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/hellopython/wumpus-3.py" afterPath="$PROJECT_DIR$/hellopython/hunt_wumpus/wumpus-3.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/hellopython/wumpus-4.py" afterPath="$PROJECT_DIR$/hellopython/hunt_wumpus/wumpus-4.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/hellopython/wumpus-5.py" afterPath="$PROJECT_DIR$/hellopython/hunt_wumpus/wumpus-5.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="python.iws" />
@@ -28,14 +63,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="difference_engine_2_os.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/hellopython/difference_engine_2_os.py">
+      <file leaf-file-name="test_todo.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/hellopython/todo/test_todo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.63325185" vertical-offset="11" max-vertical-offset="480">
-              <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
-              <folding>
-                <element signature="e#23#33#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.33251834" vertical-offset="224" max-vertical-offset="720">
+              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="todo.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hellopython/todo/todo.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="1035">
+              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -61,6 +104,10 @@
         <option value="$PROJECT_DIR$/hellopython/wumpus-3.py" />
         <option value="$PROJECT_DIR$/hellopython/compare_dirs.py" />
         <option value="$PROJECT_DIR$/hellopython/difference_engine_2_os.py" />
+        <option value="$PROJECT_DIR$/hellopython/test_todo.py" />
+        <option value="$PROJECT_DIR$/hellopython/todo.py" />
+        <option value="$PROJECT_DIR$/hellopython/todo/todo.py" />
+        <option value="$PROJECT_DIR$/hellopython/todo/test_todo.py" />
       </list>
     </option>
   </component>
@@ -126,6 +173,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="python" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="python" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hellopython" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="todo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -146,46 +211,150 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/hellopython" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/hellopython/hunt_wumpus" />
+      <recent name="$PROJECT_DIR$/hellopython/difference_engine" />
+    </key>
   </component>
-  <component name="RunManager" selected="Python.wumpus-1">
-    <configuration default="false" name="string_capwords" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/stdlib" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="python" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/stdlib/string_capwords.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <RunnerSettings RunnerId="PyDebugRunner" />
-      <ConfigurationWrapper RunnerId="PyDebugRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="string_maketrans" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/stdlib" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="python" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/stdlib/string_maketrans.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <RunnerSettings RunnerId="PyDebugRunner" />
-      <ConfigurationWrapper RunnerId="PyDebugRunner" />
-      <method />
-    </configuration>
+  <component name="RestoreUpdateTree">
+    <UpdateInfo date="Moments ago" ActionInfo="_Update">
+      <UpdatedFiles>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated from server" />
+          <option name="myStatusName" value="Changed on server" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CHANGED_ON_SERVER" />
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Updated" />
+            <option name="myStatusName" value="Changed" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" value="UPDATED" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Created" />
+            <option name="myStatusName" value="Created" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" value="CREATED" />
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/hellopython/difference_engine_3_os.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/hellopython/difference_engine_4_os.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/hellopython/gen_hash_file.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/hellopython/hello1.txt</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/hellopython/hello2.txt</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/hellopython/os_walk_demo.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/hellopython/test/image1.gif</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/hellopython/test/image2.gif</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/hellopython/test/image3.gif</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/hellopython/test/test 2/test1.txt</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/hellopython/test/test 2/test2.txt</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/hellopython/test/test 2/test3.txt</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/hellopython/test/test1.txt</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/hellopython/test/test2.txt</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/hellopython/test/test3.txt</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/hellopython/test2/image2.gif</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/hellopython/test2/image3.gif</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/hellopython/test2/image4.gif</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/hellopython/test2/test 2/test2.txt</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/hellopython/test2/test 2/test3.txt</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/hellopython/test2/test 2/test4.txt</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/hellopython/test2/test2.txt</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/hellopython/test2/test3.txt</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/hellopython/test2/test4.txt</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/hellopython/test_todo.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/hellopython/todo.py</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/hellopython/todo.pyc</PATH>
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Deleted" />
+            <option name="myStatusName" value="Deleted" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="true" />
+            <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Restored" />
+            <option name="myStatusName" value="Will be restored" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" value="RESTORED" />
+          </FILE-GROUP>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Modified" />
+          <option name="myStatusName" value="Modified" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MODIFIED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Skipped" />
+          <option name="myStatusName" value="Skipped" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="SKIPPED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged with conflicts" />
+          <option name="myStatusName" value="Will be merged with conflicts" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED_WITH_CONFLICTS" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged with tree conflicts" />
+          <option name="myStatusName" value="Merged with tree conflicts" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged with property conflicts" />
+          <option name="myStatusName" value="Will be merged with property conflicts" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged" />
+          <option name="myStatusName" value="Will be merged" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Not in repository" />
+          <option name="myStatusName" value="Not in repository" />
+          <option name="mySupportsDeletion" value="true" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UNKNOWN" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Locally added" />
+          <option name="myStatusName" value="Locally added" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="LOCALLY_ADDED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Locally removed" />
+          <option name="myStatusName" value="Locally removed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="LOCALLY_REMOVED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Switched" />
+          <option name="myStatusName" value="Switched" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="SWITCHED" />
+        </FILE-GROUP>
+      </UpdatedFiles>
+    </UpdateInfo>
+  </component>
+  <component name="RunManager" selected="Python.test_todo (1)">
     <configuration default="false" name="string_template" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -236,11 +405,51 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="python" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hellopython/wumpus-1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hellopython/hunt_wumpus/wumpus-1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <RunnerSettings RunnerId="PyDebugRunner" />
       <ConfigurationWrapper RunnerId="PyDebugRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="test_todo" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/hellopython" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="python" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hellopython/test_todo.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <RunnerSettings RunnerId="PyDebugRunner" />
+      <ConfigurationWrapper RunnerId="PyDebugRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="test_todo (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/hellopython/todo" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="python" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hellopython/todo/test_todo.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <RunnerSettings RunnerId="PyDebugRunner" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PyDebugRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
@@ -366,19 +575,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.string_capwords" />
-      <item index="1" class="java.lang.String" itemvalue="Python.string_maketrans" />
-      <item index="2" class="java.lang.String" itemvalue="Python.string_template" />
-      <item index="3" class="java.lang.String" itemvalue="Python.string_template_missing" />
-      <item index="4" class="java.lang.String" itemvalue="Python.wumpus-1" />
+      <item index="0" class="java.lang.String" itemvalue="Python.string_template" />
+      <item index="1" class="java.lang.String" itemvalue="Python.string_template_missing" />
+      <item index="2" class="java.lang.String" itemvalue="Python.wumpus-1" />
+      <item index="3" class="java.lang.String" itemvalue="Python.test_todo" />
+      <item index="4" class="java.lang.String" itemvalue="Python.test_todo (1)" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.wumpus-1" />
-        <item index="1" class="java.lang.String" itemvalue="Python.string_template_missing" />
-        <item index="2" class="java.lang.String" itemvalue="Python.string_template" />
-        <item index="3" class="java.lang.String" itemvalue="Python.string_maketrans" />
-        <item index="4" class="java.lang.String" itemvalue="Python.string_capwords" />
+        <item index="0" class="java.lang.String" itemvalue="Python.test_todo (1)" />
+        <item index="1" class="java.lang.String" itemvalue="Python.test_todo" />
+        <item index="2" class="java.lang.String" itemvalue="Python.wumpus-1" />
+        <item index="3" class="java.lang.String" itemvalue="Python.string_template_missing" />
+        <item index="4" class="java.lang.String" itemvalue="Python.string_template" />
       </list>
     </recent_temporary>
   </component>
@@ -417,21 +626,27 @@
       <option name="project" value="LOCAL" />
       <updated>1421763368834</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="difference engine">
+      <created>1421849760113</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1421849760113</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="652" y="31" width="788" height="797" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3997253" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3997253" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3282967" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32692307" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24238579" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -464,7 +679,8 @@
     <MESSAGE value="some examples" />
     <MESSAGE value="wumpus-1" />
     <MESSAGE value="wumpus-3" />
-    <option name="LAST_COMMIT_MESSAGE" value="wumpus-3" />
+    <MESSAGE value="difference engine" />
+    <option name="LAST_COMMIT_MESSAGE" value="difference engine" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -558,47 +774,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hellopython/wumpus-1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8484849" vertical-offset="279" max-vertical-offset="720">
-          <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hellopython/wumpus-2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.7506113" vertical-offset="0" max-vertical-offset="1215">
-          <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hellopython/wumpus-3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6818182" vertical-offset="0" max-vertical-offset="1680">
-          <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hellopython/wumpus-5.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2865">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hellopython/loop_demo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29339853" vertical-offset="0" max-vertical-offset="409">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hellopython/difference_engine_1_os.py">
+    <entry file="file://$PROJECT_DIR$/hellopython/difference_engine/difference_engine_1_os.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
@@ -606,13 +782,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hellopython/difference_engine_2_os.py">
+    <entry file="file://$PROJECT_DIR$/hellopython/difference_engine/difference_engine_2_os.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.63325185" vertical-offset="11" max-vertical-offset="480">
+        <state vertical-scroll-proportion="0.0" vertical-offset="11" max-vertical-offset="480">
           <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
           <folding>
             <element signature="e#23#33#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hellopython/difference_engine/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="409">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hellopython/todo/todo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="1035">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hellopython/todo/test_todo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33251834" vertical-offset="224" max-vertical-offset="720">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
