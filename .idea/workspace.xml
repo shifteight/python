@@ -1,44 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9cfe506e-6d12-4ea6-ba3c-dc5682650001" name="Default" comment="difference engine">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hellopython/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hellopython/difference_engine/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hellopython/hunt_wumpus/__init__.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hellopython/gen_hash_file.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hellopython/hello1.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hellopython/hello2.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hellopython/loop_demo.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hellopython/os_walk_demo.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hellopython/test_todo.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hellopython/todo.py" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hellopython/difference_engine_1_os.py" afterPath="$PROJECT_DIR$/hellopython/difference_engine/difference_engine_1_os.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hellopython/difference_engine_2_os.py" afterPath="$PROJECT_DIR$/hellopython/difference_engine/difference_engine_2_os.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hellopython/difference_engine_3_os.py" afterPath="$PROJECT_DIR$/hellopython/difference_engine/difference_engine_3_os.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hellopython/difference_engine_4_os.py" afterPath="$PROJECT_DIR$/hellopython/difference_engine/difference_engine_4_os.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hellopython/test/image1.gif" afterPath="$PROJECT_DIR$/hellopython/difference_engine/test/image1.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hellopython/test/image2.gif" afterPath="$PROJECT_DIR$/hellopython/difference_engine/test/image2.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hellopython/test/image3.gif" afterPath="$PROJECT_DIR$/hellopython/difference_engine/test/image3.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hellopython/test/test 2/test1.txt" afterPath="$PROJECT_DIR$/hellopython/difference_engine/test/test 2/test1.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hellopython/test/test 2/test2.txt" afterPath="$PROJECT_DIR$/hellopython/difference_engine/test/test 2/test2.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hellopython/test/test 2/test3.txt" afterPath="$PROJECT_DIR$/hellopython/difference_engine/test/test 2/test3.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hellopython/test/test1.txt" afterPath="$PROJECT_DIR$/hellopython/difference_engine/test/test1.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hellopython/test/test2.txt" afterPath="$PROJECT_DIR$/hellopython/difference_engine/test/test2.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hellopython/test/test3.txt" afterPath="$PROJECT_DIR$/hellopython/difference_engine/test/test3.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hellopython/test2/image2.gif" afterPath="$PROJECT_DIR$/hellopython/difference_engine/test2/image2.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hellopython/test2/image3.gif" afterPath="$PROJECT_DIR$/hellopython/difference_engine/test2/image3.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hellopython/test2/image4.gif" afterPath="$PROJECT_DIR$/hellopython/difference_engine/test2/image4.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hellopython/test2/test 2/test2.txt" afterPath="$PROJECT_DIR$/hellopython/difference_engine/test2/test 2/test2.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hellopython/test2/test 2/test3.txt" afterPath="$PROJECT_DIR$/hellopython/difference_engine/test2/test 2/test3.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hellopython/test2/test 2/test4.txt" afterPath="$PROJECT_DIR$/hellopython/difference_engine/test2/test 2/test4.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hellopython/test2/test2.txt" afterPath="$PROJECT_DIR$/hellopython/difference_engine/test2/test2.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hellopython/test2/test3.txt" afterPath="$PROJECT_DIR$/hellopython/difference_engine/test2/test3.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hellopython/test2/test4.txt" afterPath="$PROJECT_DIR$/hellopython/difference_engine/test2/test4.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hellopython/wumpus-1.py" afterPath="$PROJECT_DIR$/hellopython/hunt_wumpus/wumpus-1.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hellopython/wumpus-2.py" afterPath="$PROJECT_DIR$/hellopython/hunt_wumpus/wumpus-2.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hellopython/wumpus-3.py" afterPath="$PROJECT_DIR$/hellopython/hunt_wumpus/wumpus-3.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hellopython/wumpus-4.py" afterPath="$PROJECT_DIR$/hellopython/hunt_wumpus/wumpus-4.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hellopython/wumpus-5.py" afterPath="$PROJECT_DIR$/hellopython/hunt_wumpus/wumpus-5.py" />
+    <list default="true" id="9cfe506e-6d12-4ea6-ba3c-dc5682650001" name="Default" comment="testing and directory restructure">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="python.iws" />
@@ -66,8 +29,8 @@
       <file leaf-file-name="test_todo.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hellopython/todo/test_todo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33251834" vertical-offset="224" max-vertical-offset="720">
-              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.5599022" vertical-offset="611" max-vertical-offset="2040">
+              <caret line="56" column="9" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -76,8 +39,8 @@
       <file leaf-file-name="todo.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hellopython/todo/todo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="1035">
-              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1950">
+              <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -106,14 +69,14 @@
         <option value="$PROJECT_DIR$/hellopython/difference_engine_2_os.py" />
         <option value="$PROJECT_DIR$/hellopython/test_todo.py" />
         <option value="$PROJECT_DIR$/hellopython/todo.py" />
-        <option value="$PROJECT_DIR$/hellopython/todo/todo.py" />
         <option value="$PROJECT_DIR$/hellopython/todo/test_todo.py" />
+        <option value="$PROJECT_DIR$/hellopython/todo/todo.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="652" />
-    <option name="y" value="31" />
+    <option name="y" value="23" />
     <option name="width" value="788" />
     <option name="height" value="797" />
   </component>
@@ -632,17 +595,23 @@
       <option name="project" value="LOCAL" />
       <updated>1421849760113</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="testing and directory restructure">
+      <created>1422023978611</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1422023978611</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="652" y="31" width="788" height="797" extended-state="0" />
+    <frame x="652" y="23" width="788" height="797" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3997253" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3997253" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -680,7 +649,8 @@
     <MESSAGE value="wumpus-1" />
     <MESSAGE value="wumpus-3" />
     <MESSAGE value="difference engine" />
-    <option name="LAST_COMMIT_MESSAGE" value="difference engine" />
+    <MESSAGE value="testing and directory restructure" />
+    <option name="LAST_COMMIT_MESSAGE" value="testing and directory restructure" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -787,7 +757,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="11" max-vertical-offset="480">
           <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
           <folding>
-            <element signature="e#23#33#0" expanded="true" />
+            <element signature="e#23#33#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -802,16 +772,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hellopython/todo/todo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="1035">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1950">
+          <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hellopython/todo/test_todo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33251834" vertical-offset="224" max-vertical-offset="720">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.5599022" vertical-offset="611" max-vertical-offset="2040">
+          <caret line="56" column="9" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
           <folding />
         </state>
       </provider>
