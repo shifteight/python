@@ -5,6 +5,8 @@ def create_todo(todos, title, description, level):
         'level': level,
     }
     todos.append(todo)
+    sort_todos()
+    return "Created '%s'." % title
 
 
 def capitalize(todo):
@@ -42,7 +44,8 @@ def show_todo(todo, index):
     return output
 
 
-def sort_todos(todos):
+def sort_todos():
+    global todos
     important = [capitalize(todo) for todo in todos
                  if todo['level'].lower() == 'important']
     unimportant = [todo for todo in todos
@@ -50,21 +53,47 @@ def sort_todos(todos):
     medium = [todo for todo in todos
               if todo['level'].lower() != 'important'
               and todo['level'].lower() != 'unimportant']
-    return important + medium + unimportant
+    todos = important + medium + unimportant
 
 
 def show_todos(todos):
     output = ("Item      Title             "
               "Description               Level\n")
 
-    sorted_todos = sort_todos(todos)
-
-    for index, todo in enumerate(sorted_todos):
+    for index, todo in enumerate(todos):
         output += show_todo(todo, index)
 
-    print output  # for debug
+    # print output  # for debug
     return output
 
+
+def delete_todo(todos, which):
+    if not which.isdigit():
+        return "'" + which + "' needs to be the number of a todo!"
+    which = int(which)
+    if which < 1 or which > len(todos):
+        return "'" + str(which) + "' needs to be the number of a todo!"
+    del todos[which-1]
+    return "Deleted todo #" + str(which)
+
+
+def edit_todo(todos, which, title, description, level):
+    if not which.isdigit():
+        return "'" + which + "' needs to be the number of a todo!"
+    which = int(which)
+    if which < 1 or which > len(todos):
+        return "'" + str(which) + "' needs to be the number of a todo!"
+
+    todo = todos[which-1]
+    if title != '':
+        todo['title'] = title
+    if description != '':
+        todo['description'] = description
+    if level != '':
+        todo['level'] = level
+
+    sort_todos()
+    return "Edited todo #" + str(which)
 
 def get_input(fields):
     user_input = {}
@@ -81,6 +110,8 @@ def test(todos, abcd, ijkl):
 commands = {
     'new': [create_todo, ['title', 'description', 'level']],
     'show': [show_todos, []],
+    'delete': [delete_todo, ['which']],
+    'edit': [edit_todo, ['which', 'title', 'description', 'level']],
     'test': [test, ['abcd', 'ijkl']],
 }
 
@@ -110,14 +141,33 @@ def get_fields(command_name):
     return commands[command_name][1]
 
 
+import pickle
+import os
+
+
+def save_todo_list():
+    save_file = file("todos.pickle", "w")
+    pickle.dump(todos, save_file)
+    save_file.close()
+
+
+def load_todo_list():
+    global todos
+    if os.access("todos.pickle", os.F_OK):
+        save_file = file("todos.pickle")
+        todos = pickle.load(save_file)
+
+
 def main_loop():
     user_input = ''
+    load_todo_list()
     while 1:
         print run_command(user_input)
         user_input = raw_input('> ')
         if user_input.lower().startswith('quit'):
             print 'Exiting...'
             break
+    save_todo_list()
 
 
 if __name__ == '__main__':
