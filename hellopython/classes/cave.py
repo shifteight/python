@@ -1,5 +1,6 @@
 from random import choice, shuffle
 
+
 class Cave(object):
     def __init__(self, name, description):
         self.name = name
@@ -50,6 +51,7 @@ def create_caves():
         new_cave.tunnel_to(choice(eligible_caves))
         caves.append(new_cave)
     return caves
+
 
 if __name__ == '__main__':
     for cave in create_caves():

@@ -1,15 +1,15 @@
 import shlex
 
+
 class Player(object):
+
     def __init__(self, location):
         self.location = location
         self.location.here.append(self)
         self.playing = True
 
-
     def get_input(self):
         return raw_input(">")
-
 
     def process_input(self, input):
         parts = shlex.split(input)
@@ -40,7 +40,6 @@ class Player(object):
         elif verb.lower() in self.location.actions:
             return getattr(self.location, verb)
 
-
     def look(self, player, noun):
         return [self.location.name,
                 self.location.description]
@@ -50,3 +49,24 @@ class Player(object):
         return ['bye bye!']
 
     actions = ['look', 'quit']
+
+
+def test():
+    import cave
+    empty_cave = cave.Cave(
+        "Empty Cave",
+        "A desolate, empty cave, "
+        "waiting for someone to fill it."
+    )
+    player = Player(empty_cave)
+
+    print player.location.name
+    print player.location.description
+    while player.playing:
+        input = player.get_input()
+        result = player.process_input(input)
+        print "\n".join(result)
+
+
+if __name__ == '__main__':
+    test()
