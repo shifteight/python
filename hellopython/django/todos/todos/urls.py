@@ -1,0 +1,19 @@
+from django.conf.urls import patterns, include, url
+
+# Uncomment the next two lines to enable the admin:
+# from django.contrib import admin
+# admin.autodiscover()
+
+import todo.views
+
+urlpatterns = patterns('',
+    # Examples:
+    # url(r'^$', 'todos.views.home', name='home'),
+    # url(r'^todos/', include('todos.foo.urls')),
+    (r'.*', todo.views.hello_world),
+    # Uncomment the admin/doc line below to enable admin documentation:
+    # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
+
+    # Uncomment the next line to enable the admin:
+    # url(r'^admin/', include(admin.site.urls)),
+)
