@@ -35,7 +35,7 @@ class Game(object):
         "Spooky Chasm",
     ]
 
-    def create_caves():
+    def create_caves(self):
         random.shuffle(self.cave_names)
         caves = [cave.Cave(self.cave_names[0])]
         for name in self.cave_names[1:]:

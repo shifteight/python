@@ -6,9 +6,7 @@ class Item(object):
         self.location = location
         location.here.append(self)
 
-
     actions = ['look', 'get', 'drop']
-
 
     def look(self, player, noun):
         return [self.description]
