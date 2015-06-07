@@ -65,3 +65,7 @@ import matplotlib.pyplot as plt
 plt.plot(generate_ts(200, 0.9), 'b-')
 
 # Plot with legends
+for alpha in [0.0, 0.8, 0.98]:
+	plt.plot(generate_ts(200, alpha), label='alpha = ' + str(alpha))
+plt.legend()
+
