@@ -1,0 +1,84 @@
+The following corrections apply to the first edition of the book. If you have something else to report please contact the author at flaskbookfeedback@gmail.com.
+
+Chapter 3, Example 3-3
+The URL of the first route is incorrectly shown as /index, while the correct URL is /. (Reported by Farhad Fouladi)
+
+Chapter 4, Section "HTML Rendering of Forms"
+The punctuation in the first sentence is incorrect. The correct sentence should read "Form fields are callables that, when invoked from a template, render themselves to HTML.". (Reported by Ken Hommel)
+
+Chapter 4, Section "HTML Rendering of Forms"
+The first two code examples in this section show how to render a form in a template, but are incomplete as they do not show how to implement CSRF protection. The corrected examples are shown below:
+
+<form method="POST">
+{{ form.hidden_tag() }}
+{{ form.name.label }} {{ form.name() }}
+{{ form.submit() }}
+</form>
+<form method="POST">
+{{ form.hidden_tag() }}
+{{ form.name.label }} {{ form.name(id='my-text-field') }}
+{{ form.submit() }}
+</form>
+The {{ form.hidden_tag() }} line adds a hidden field to the form where Flask-WTF stores the CSRF token. Note that CSRF support is included in Flask-Bootstrap's `wtf.quick_form()` macro, so this is only needed when rendering forms manually. (Reported by Richard Milne)
+
+Chapter 4, Example 4-3
+The text that follows the example incorrectly indicates that the format of a Jinja2 conditional is {% if variable %}...{% else %}...{% endif %}, but really should have used the term condition instead of variable. (Reported by Marco Agner)
+
+Chapter 4, Example 4-6
+In this example the line of code that reads form.name.data = '' should not be in this function, as it has no effect. (Reported by Steven Marcatante)
+
+Chapter 5, Example 5-4
+The pathname printed in the heading of this example is incorrect. The correct pathname is hello.py. (Reported by Napoleon)
+
+Chapter 6, Table 6-1
+The configuration variable that stores the email server hostname is incorrect. The correct variable is MAIL_SERVER. (Reported by Christian Hettlage)
+
+Chapter 7, Example 7-5
+A dot is missing in the import statement that imports the blueprint. The correct import statement is from .main import main as main_blueprint. (Reported by Erik de Wildt)
+
+Chapter 8, Example 8-9
+The example does not import the Length validator. The import line that imports the validators is: from wtforms.validators import Required, Length, Email. (Reported by Ken Hommel and Dan Carpenter)
+
+Chapter 8, Example 8-20
+The pathname printed in the heading of this example is incorrect. The correct pathname is app/templates/auth/email/confirm.txt. (Reported by John Baham, Jr.)
+
+Chapter 8, Example 8-22
+The before_request() handler was coded to deny any requests outside of the auth blueprint, but this effectively prevents static files from being served. Normally this isn't a problem because the static files were already cached in the client web browser, but a correct handler is shown below:
+@auth.before_app_request
+def before_request():
+    if current_user.is_authenticated() \
+            and not current_user.confirmed \
+            and request.endpoint[:5] != 'auth.' \
+            and request.endpoint != 'static':
+        return redirect(url_for('auth.unconfirmed'))
+This change allows static files such as image, Javascript and CSS files to be served to unconfirmed users. (Reported by Michael Graupner)
+
+Chapter 8, Example 8-22
+The redirect() call in route unconfirmed() is incorrectly printed. The correct line is return redirect(url_for('main.index')). (Reported by Arne Wiese)
+
+Chapter 8, Example 8-23
+The correct code example is shown below:
+@auth.route('/confirm')
+@login_required
+def resend_confirmation():
+token = current_user.generate_confirmation_token()
+send_email(current_user.email, 'Confirm Your Account',
+'auth/email/confirm', user=current_user, token=token)
+flash('A new confirmation email has been sent to you by email.')
+return redirect(url_for('main.index'))
+The version printed in the book has an incorrect argument list in the call to the `send_email()` function. (Reported by Wang Yandong)
+
+Chapter 9, Example 9-6
+The code example is missing one import: from .models import Permission. (Reported by Jonathan Kapelus)
+
+Chapter 10, Example 10-8
+The code example contains a typo. The line that reads db.session.add(user) should be db.session.add(current_user). (Reported by Lukasz Gabrych)
+
+Chapter 11, Example 11-15, and Chapter 12, Examples 12-3, 12-7, 12-10, 12-11
+The pathname printed in the heading of these examples is incorrect. The correct pathname is app/models.py. (Reported by John Baham, Jr.)
+
+Chapter 14, section "Creating an API Blueprint"
+The filenames of some of the files in the api_1_0 folder are in singular, while they should be plural to match the source code on GitHub. These are users.py, posts.py and comments.py. (Reported by John Baham, Jr.)
+
+Chapter 15, Example 15-5
+The "write a post" portion of the test includes an incorrect body string that does not have correct Markdown styling. The correct sentence should be data = json.dumps ({ 'body' : 'body of the *blog* post' })). (Reported by Dmitry Zhuravlev-Nevsky)
