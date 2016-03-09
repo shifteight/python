@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<book>
+	<title>the book title</title>
+	<author>
+		<name>xinxing</name>
+		<boy>true</boy>
+	</author>
+	<chapter number="1">
+		<title>first chapter</title>
+		<para>
+			I love Python, and you?
+		</para>
+	</chapter>
+</book>
