@@ -13,7 +13,7 @@ def show_tree(tree, total_width=36, fill=' '):
         if row != last_row:
             output.write('\n')
         columns = 2 ** row
-        col_width = int(math.floor((toal_width * 1.0) / columns))
+        col_width = int(math.floor((total_width * 1.0) / columns))
         output.write(str(n).center(col_width, fill))
         last_row = row
     print output.getvalue()
