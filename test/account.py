@@ -1,19 +1,30 @@
+"""
+A module
+"""
+
+
 class BankAccount:
-	def __init__(self):
-		self.balance = 0
+    """
+    A class.
+    """
 
-	def withdraw(self, amount):
-		self.balance -= amount
-		return self.balance
+    def __init__(self):
+        self.balance = 0
 
-	def deposit(self, amount):
-		self.balance += amount
-		return self.balance
+    def withdraw(self, amount):
+        """withdraw an amount."""
+        self.balance -= amount
+        return self.balance
+
+    def deposit(self, amount):
+        """deposit an amount."""
+        self.balance += amount
+        return self.balance
 
 
-a = BankAccount()
-b = BankAccount()
-a.deposit(100)
-b.deposit(50)
-b.withdraw(10)
-b.withdraw(10)
+A = BankAccount()
+B = BankAccount()
+A.deposit(100)
+B.deposit(50)
+B.withdraw(10)
+B.withdraw(10)
