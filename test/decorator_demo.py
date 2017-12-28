@@ -14,5 +14,5 @@ def say(say_please=False):
 	msg = "Can you buy me a beer?"
 	return msg, say_please
 
-print say()
-print say(say_please=True)
+print(say())
+print(say(say_please=True))
