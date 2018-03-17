@@ -2,6 +2,7 @@ __author__ = 'kevin'
 
 # exercises for chapter 1
 
+
 def is_multiple(n, m):
     """
     return true if n is a multiple of m
@@ -16,6 +17,8 @@ def is_multiple(n, m):
 
 
 def is_even(k):
+    if k < 0:
+        return is_even(-k)
     if k == 0:
         return True
     else:
@@ -45,18 +48,26 @@ def sum_of_squares(n):
     :param n:
     :return:
     """
-    return sum(k * k for k in range(1, n))  # using generator comprehension
+    if n <= 0:
+        raise ValueError("n must be positive integer")
+    else:
+        return sum(k * k for k in range(1, n))  # using generator comprehension
 
 
 def my_choice(data):
     """
-    return a random element from a non-empty sequence `data`, using randrange function
-    from random module.
+    return a random element from a non-empty sequence `data`, 
+    using randrange function from random module.
     :param data:
     :return:
     """
     import random
-    return data[random.randrange(len(data))]
+
+    n = len(data)
+    if n == 0:
+        raise ValueError("data must be non-empty")
+    else:
+        return data[random.randrange(n)]
 
 
 def reverse_list(numbers):
@@ -135,7 +146,7 @@ def mfy_shuffle(numbers):
     for i in range(n):
         j = randint(i, n - 1)
         numbers[i], numbers[j] = numbers[j], numbers[i]
-    
+
 
 # C-1.21
 def read_and_print_reverse():
@@ -144,7 +155,7 @@ def read_and_print_reverse():
     n = len(data)
     for i in range(1, n + 1):
         print(data[-i].strip())
-        
+
 
 # C-1.22
 # dot product of two arrays of length n
@@ -162,6 +173,8 @@ def dot_product(a, b):
     return c
 
 # C-1.24
+
+
 def count_vowels(s):
     """
     count number of vowels in string
@@ -189,6 +202,8 @@ def remove_punctuations(s):
 # TODO!
 
 # C-1.28
+
+
 def norm(v, p=2):
     """
     return the p-norm of vector v.
