@@ -1,7 +1,6 @@
 import sys
 from PyQt5.QtWidgets import (QWidget, QToolTip, QPushButton, QApplication)
 from PyQt5.QtGui import QFont
-from PyQt5.QtCore import QCoreApplication
 
 
 class Example(QWidget):
@@ -19,7 +18,6 @@ class Example(QWidget):
 
         btn = QPushButton('Button', self)
         btn.setToolTip('This is a <b>QPushButton</b> widget')
-        btn.clicked.connect(QCoreApplication.instance().quit)
         btn.resize(btn.sizeHint())
         btn.move(50, 50)
 

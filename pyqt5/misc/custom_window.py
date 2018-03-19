@@ -3,6 +3,7 @@ from PyQt5.QtWidgets import QApplication, QWidget, QPushButton
 from PyQt5.QtGui import QIcon
 from PyQt5.QtCore import QCoreApplication
 
+
 class Ico(QWidget):
 
     def __init__(self):
@@ -13,7 +14,7 @@ class Ico(QWidget):
     def initUI(self):
         self.setGeometry(300, 300, 300, 220)
         self.setWindowTitle('Custom Window')
-        self.setWindowIcon(QIcon('resources/fav.ico'))
+        self.setWindowIcon(QIcon('fav.ico'))
 
         qbtn = QPushButton('Exit', self)
         qbtn.clicked.connect(QCoreApplication.instance().quit)
@@ -21,7 +22,8 @@ class Ico(QWidget):
         qbtn.move(50, 50)
 
         self.show()
-    
+
+
 if __name__ == '__main__':
     app = QApplication(sys.argv)
     ex = Ico()
