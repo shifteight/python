@@ -1,0 +1,8 @@
+time,latitude,longitude,depth,mag,magType,nst,gap,dmin,rms,net,id,updated,place,type,horizontalError,depthError,magError,magNst,status,locationSource,magSource
+2019-05-24T06:55:49.184Z,61.3484,-150.0978,41.7,1,ml,,,,0.42,ak,ak0196m9agx2,2019-05-24T06:58:41.642Z,"17km NW of Anchorage, Alaska",earthquake,,0.7,,,automatic,ak,ak
+2019-05-24T06:43:23.200Z,37.1896667,-121.4520035,5.49,1.38,md,15,88,0.09406,0.09,nc,nc73186206,2019-05-24T06:52:02.334Z,"18km NE of San Martin, CA",earthquake,0.33,1.79,0.11,7,automatic,nc,nc
+2019-05-24T06:31:08.720Z,60.228,-136.9516,0,2,ml,,,,1.03,ak,ak0196m958m0,2019-05-24T06:41:57.685Z,"65km SSE of Haines Junction, Canada",earthquake,,0.4,,,automatic,ak,ak
+2019-05-24T06:15:10.276Z,62.0604,-147.6762,28.4,2.5,ml,,,,0.62,ak,ak0196m91t96,2019-05-24T06:28:04.048Z,"68km ENE of Sutton-Alpine, Alaska",earthquake,,0.3,,,automatic,ak,ak
+2019-05-24T06:12:25.470Z,38.7885017,-122.7220001,-0.83,0.58,md,6,193,0.005696,0.11,nc,nc73186191,2019-05-24T06:53:03.339Z,"3km WNW of Anderson Springs, CA",earthquake,1.9,0.87,0.14,3,automatic,nc,nc
+2019-05-24T06:05:50.160Z,69.6747,-144.5805,4.4,1.8,ml,,,,1.08,ak,ak0196m8zr78,2019-05-24T06:10:48.924Z,"62km SW of Kaktovik, Alaska",earthquake,,0.5,,,automatic,ak,ak
+2019-05-24T06:02:13.710Z,38.776165,-122.7545013,0.31,1.56,md,16,100,0.01034,0.04,nc,nc73186186,2019-05-24T06:43:03.284Z,"0km SE of The Geysers, CA",earthquake,0.2,0.48,0.07,5,automatic,nc,nc
